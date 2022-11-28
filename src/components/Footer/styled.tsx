@@ -9,7 +9,6 @@ export const StyledFooter = styled.footer`
     width: 100%;
     height: 32px;
     background-color: ${({ theme }) => theme.backgroundBase};
-    border: 1px solid ${({ theme }) => theme.borderBase};
     color: ${({ theme }) => theme.textColorBase};
     align-items:center;
     justify-content:center;
@@ -26,7 +25,7 @@ export const StyledFooter = styled.footer`
         &:hover,
         &:focus {
             opacity: 1;
-            color: red;
+            color: ${({ theme }) => theme.textColorHover};
         }
     }
 `;
